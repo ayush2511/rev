@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main() 
+{ char op; 
+float a,b, result=0; 
+printf("CALCULATOR\n");
+printf("Enter for this [+ - * /] \n"); 
+scanf("%f %c %f", &a, &op, &b); 
+switch(op) 
+{ case '+': 
+result = a + b; 
+break; 
+case '-': result = a - b; 
+break; 
+case '*': 
+result = a*b; 
+break; 
+case '/': 
+result = a/b; 
+break; 
+} 
+printf("%.2f %c %.2f = %.2f", a, op,b, result);
+
+return 0; 
+    
+}
